@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardianView</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Quicksand", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e2f;
+            color: #f4f4f4;
+        }
+        .quicksand-header {
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+        .quicksand-subheader {
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        .quicksand-body {
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+        header {
+            background: linear-gradient(45deg, #4B0082, #6A5ACD);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #2E2E8E;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #6A5ACD;
+            border-radius: 5px;
+        }
+        .hero {
+            background: url('./guardianviewhero.png') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+        }
+        .hero h1 {
+            font-family: "Quicksand", sans-serif;
+            font-weight: 700;
+            font-size: 60px;
+            margin: 0;
+        }
+        .hero p {
+            font-family: "Quicksand", sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+        }
+        .features, .call-to-action {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .features h2, .call-to-action h2 {
+            font-family: "Quicksand", sans-serif;
+            font-weight: 600;
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #4B0082;
+        }
+        .features .feature {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+            background: #2c2c3e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+        }
+        .features .feature img {
+            max-width: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .call-to-action .cta {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #2c2c3e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background-color: #4B0082;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        button {
+            background: #6A5ACD;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #4B0082;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <h1 class="quicksand-header">GuardianView</h1> -->
+        <img src="GWtemplogo3.png" alt="Guardian View"> 
+        <p class="quicksand-body">Revolutionizing Geriatric Care with AI</p>
+    </header>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h1 class="quicksand-header">Your Loved Ones, Safer at Home</h1>
+        <p class="quicksand-body">Advanced Monitoring, Smarter Alerts</p>
+        <button>Learn More</button>
+    </section>
+    <section id="features" class="features">
+        <h2 class="quicksand-subheader">Our Features</h2>
+        <div class="feature">
+            <img src= "activityGW.webp" alt="Activity Tracking">
+            <div>
+                <h3 class="quicksand-subheader">Activity Tracking</h3>
+                <p class="quicksand-body">Monitor daily activities like bathroom visits, medication adherence, and sleep patterns with precision.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="insightsGW.webp" alt="AI Insights">
+            <div>
+                <h3 class="quicksand-subheader">AI-Generated Insights</h3>
+                <p class="quicksand-body">Get trend analysis and actionable insights for better health management over time.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="cameraGW.png" alt="Live Monitoring">
+            <div>
+                <h3 class="quicksand-subheader">Live Video Monitoring</h3>
+                <p class="quicksand-body">Stay connected with secure, real-time video feeds accessible anytime, anywhere.</p>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="call-to-action">
+        <h2 class="quicksand-subheader">Affordable Plans</h2>
+        <div class="cta">
+            <p class="quicksand-body"><strong>Basic:</strong>  Activity tracking and alerts</p>
+            <p class="quicksand-body"><strong>Premium:</strong> Includes live video and AI insights</p>
+            <p class="quicksand-body"><strong>Enterprise:</strong> Contact us for tailored solutions</p>
+            <button>Get Started</button>
+        </div>
+    </section>
+    <section id="contact" class="call-to-action">
+        <h2 class="quicksand-subheader">Contact Us</h2>
+        <div class="cta">
+            <p class="quicksand-body">Email: support@guardianview.com</p>
+            <p class="quicksand-body">Phone: (734) 353-0584</p>
+            <button>Schedule a Demo</button>
+        </div>
+    </section>
+    <footer>
+        <p class="quicksand-body">&copy; 2024 GuardianView. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
